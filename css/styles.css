@@ -1,0 +1,153 @@
+/* SELECTOR PADRE O PRINCIPAL */
+:root{
+    --color-primario:#EC111A;
+    --color-secundario:#0822BA;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --color-fondo:#FCFCFC;
+    --color-sombras: #282D31;
+}
+/* SELECTOR UNIVERSAL  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SELECTOR HIJO */
+body{
+    background-color: var(--color-fondo);
+    padding: 4em;
+}
+article{
+    font-size: 11px;
+}
+/* Boton de Whatsap */
+.boton-whatsapp{
+    position: fixed;
+    bottom: 3em;
+    left:3em;
+    background-color: #4dc247;
+    padding: 1em;
+    border-radius: 100%;
+    color:#fff;
+    font-size: 2em;
+}
+.boton-whatsapp:hover{
+    background-color: #128C7E;
+    transition: background-color .5s ease-in-out;
+}
+/* Inicio de Menu */
+header{
+    background-color:yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 3px var(--color-sombras);
+}
+.menu{
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+
+}
+.img-logo{
+    height: 3.8em;
+    padding: .2em;
+}
+.icono-menu{
+    display: none;
+}
+.enlace{
+    text-align: right;
+    margin-right: .5em;
+}
+.enlaces a{
+    color:var(--color-parrafos);
+    padding: .5em;
+    font-size: 1em;
+    text-decoration: none;
+}
+.enlace:hover{
+    color: yellow;
+    background-color: var(--color-secundario);
+    transition: background-color .5s ease-in-out;
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+/* El media screen se utiliza para hacer resposive */
+@media screen and (max-width:1023px){
+    .menu{
+        flex-direction: column;
+    }
+    .icono-menu{
+        display: block;
+        color:var(--color-primario);
+        font-size:2em;
+        margin-top: .4em;;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: .5em;
+    }
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* SELECTOR DE CLASE (CLASS): EL PUNTO (.) */
+.titulo2{
+    color:var(--color-titulos);
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo1{
+    color:var(--color-primario);
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: -.3em;
+}
+.parrafo{
+    color:var(--color-parrafos);
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: "Roboto",sans-serif;
+
+}
+.margen{
+    margin-bottom: 5%;;
+}
+.enlace{
+    background-color:var(--color-primario);
+    color:#fff;
+    padding: 1em;
+    border-radius: .6em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5em;
+}
+.contenido{
+    margin: .5em;
+    padding:.5em;
+    flex-direction: row-reverse;
+}

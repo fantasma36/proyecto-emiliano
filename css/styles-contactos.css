@@ -1,0 +1,54 @@
+/* SELECTOR PADRE O PRINCIPAL */
+:root{
+    --color-primario:#EC111A;
+    --color-secundario:#0822BA;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --color-fondo:#FCFCFC;
+    --color-sombras: #282D31;
+}
+/* SELECTOR UNIVERSAL  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* SELECTOR HIJO */
+body{
+    background-color: var(--color-fondo);
+}
+article{
+    padding: 2em;
+}
+
+/* SELECTOR DE ETIQUETA */
+form{
+    background-color: #fff;
+    margin: auto;
+    padding:1em;
+    box-shadow: 1px 1px 8px #000;
+    max-width: 800px;
+}
+label{
+    color: var(--color-primario);
+    font-weight:bold;
+}
+input{
+    width: 100%;
+    padding: .4em;
+    border:2px solid var(--color-primario);
+    margin-bottom: 1em;
+}
+textarea{
+    width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+    border:2px solid var(--color-primario);
+}
+.boton{
+    background-color:var(--color-primario);
+    color: var(--color-fondo);
+}
+.boton:hover{
+    background-color: var(--color-secundario);
+}
